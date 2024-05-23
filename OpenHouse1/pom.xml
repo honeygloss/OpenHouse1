@@ -27,7 +27,7 @@
                 <version>3.3.2</version>
                 <configuration>
                     <!-- Configure the Web application directory -->
-                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                    <warSourceDirectory>C:\Users\ASUS\git\OpenHouse1\OpenHouse1\target\pure-beach-44724-1.0-SNAPSHOT.war</warSourceDirectory>
                 </configuration>
             </plugin>
         </plugins>
