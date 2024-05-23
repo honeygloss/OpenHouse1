@@ -10,16 +10,19 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.eclipse.jetty</groupId>
-      <artifactId>jetty-servlet</artifactId>
-      <version>9.4.7.v20170914</version>
-    </dependency>
-    <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
-      <version>3.1.0</version>
-    </dependency>
+    <groupId>javax.servlet</groupId>
+    <artifactId>javax.servlet-api</artifactId>
+    <version>4.0.1</version>
+    <scope>provided</scope>
+</dependency>
+<dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-core</artifactId>
+    <version>9.0.89</version>
+</dependency>
+
   </dependencies>
+
   <build>
     <plugins>
       <plugin>
@@ -27,7 +30,10 @@
         <artifactId>heroku-maven-plugin</artifactId>
         <version>3.8.8</version>
         <configuration>
-          <appName>testing</appName>
+          <appName>pure-beach-44724</appName>
+          <processTypes>
+            <web>java -jar target/dependency/webapp-runner.jar target/*.war</web>
+          </processTypes>
         </configuration>
       </plugin>
     </plugins>
