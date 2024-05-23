@@ -1,2 +1,3 @@
-web: java -jar /OpenHouse1/target/helloworld-1.0-SNAPSHOT.jar
+web: java -jar target/helloworld-1.0-SNAPSHOT.jar
+
 
