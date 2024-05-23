@@ -1,2 +1,2 @@
-web: java -jar helloworld.jar
+web: java -jar helloworld-1.0-SNAPSHOT.jar
 
